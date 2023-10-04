@@ -1,3 +1,16 @@
+
+혼자하는 게임이라고 seamless wallet API를 사용하는 게 아님. 
+
+
+[Seamless vs Wallet](https://www.linkedin.com/pulse/wallet-integration-vs-seamless-comparison-between-anna-manente)
+
+
+
+![Transfer vs Seamless](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/231004190034.png)
+
+
+
+
 # 3 Pragmatic Play SeamlessWallet API
 
 
@@ -349,6 +362,22 @@ free ticket 취소 API
 <br>
 
 # 18 라이브 카지노
+
+[라이브 카지노 데모 사이트](https://pragmatic-play-live-casino-demo.teith.io/)
+
+
+
+프론트에서 웹소켓으로 Pragmatic Play 에서 제공하는 게임 리스트를 불러옴
+![라이브 카지노 로비](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/231004175827.png)
+
+
+
+
+
+
+
+Seamless Wallet API 의 __/bet.html__  __/result.html__  로 작동
+<br>
 
 
 
