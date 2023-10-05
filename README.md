@@ -1,12 +1,81 @@
+사용자 지갑 => Account
 
-혼자하는 게임이라고 seamless wallet API를 사용하는 게 아님. 
+
+
+# 용어 정리
+
+### Reality Check
+* 특정국가(영국)에서 카지노, 도박 사이트 운영하려면 사용자에게 Reality Check 라는 기능을 제공해야한다. 
+* Reality Check는 도박 조절을 위한 장치다. 사용자가 자신의 도박 습관을 관리하고 도박 중독을 예방하는 데 도움을 준다. 
+* Reality Check는 도박 사이트에 가입한 후 설정을 통해 활성화 한다. 그러면 일정한 간격으로 팝업창이 나타나서 사용자에게 현재 사용자의 도박 활동을 확인하고 그에 대한 판단을 도울 수 있는 정보를 제공한다. 
+* 이 팝업창에서는 사용자가 소비한 돈, 소요된 시간, 손실 금액 등을 보여줄 수 있다.  사용자는 이를 통해 자신의 도박 습관을 평가하고 필요한 경우 조절할 수 있다. 
+* 아무튼 Reality Check는 사용자에게 도박 중독을 예방하거나 문제를 조절하는 데 도움이 된다. 
+
+
+# !!!
+
+~~혼자하는 게임이라고 seamless wallet API를 사용하는 게 아니였음~~
+
+카지노 게임 제공 업체에서는 다음 두가지 솔루션을 제시할 수 있음
+* Provider가  game + account 묶어서 제공 
+* Prodiver는 game만 제공, account에 대한 관리는 Operator가 함. 
+
+game 만 제공하는 경우에도 다음 두 가지로 나눌 수 있음
+* Pragmatic Play의 API 문서 기준으로 `Seamless Wallet API` 과 `Balance Transfer API` 로 구분하여 설명
+
+  
+
+
+### Seamless Wallet
+
+* Seamless Wallet 의 경우 Operator 와  Provider 가 실시간으로 지속적으로 통신함. 
+
+* Pragmatic Play 의 `Seamless Wallet API`나  EvolutionGaming의 `One Wallet API`의 문서에 따라 Operator 측에서 REST API 서버를 생성하고, Provider와  REST API 를 통해 지속적으로 통신
+
+<br>
+
+|PragmaticPlay<br> Seamless Wallet API||EvolutionGaming<br>One Wallet API|
+|:--:|:--:|:--:|
+|Authenticate|사용자 확인|check|
+|Balance|잔고 조회|balance|
+|Bet|베팅|debit|
+|Result|베팅결과|credit|
+|Refund|베팅취소|cancle|
+|...|기타|...|
+
+* 장점: Operator가 모든 트랜잭션을 관리, Operator가 관리하는 Account가 매 라운드마다, 매 게임마다 실시간으로 업데이트됨.
+* 단점: 지속적이고 규모가 큰 데이터의 흐름을 통해 게임이 이루어지기 때문에  Provider와  Operator의 통신상태(통신지연, 네트워크 장애)에 영향(게임 속도 저하 또는 에러)을 받음.
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+### Balanc Transfer
+* 게임 시작할 때, 그리고 끝날 때에만 통신이 이루어짐. 
+* Deposit과 Withdrawl  
+* 게임 세션이 시작될 때 Provider에게 입금하고, 게임세션이 종료되면 출금
+* 이탈리아의 경우 사용자가 게임을 하기 위해서 세션티켓을 구매해야함. 게임 세션은 게임 중에 전송될 금액을 명시하며 운영자와 규제기관의 통신을 위해 구성됨. 
+* Provider와 Operator 두 주체만 있으면 되는 Seamless 방식과 다르게 세 번째 주체인 인증기관(규제자)를 포함하기 때문에 더 복잡
+* 하지만 통신은 현금 입출금 활동(Deposit & Withdrawal) 으로 제한되어 지연 및 일시적인 네트워크 장애로 인한 영향을 덜 받는다. 
+* 또한 각 거래를 검증하는 인증기관이 있어 거래를 투명하고 추적 가능하게 만들어 플레이어를 보호
+
+
+### 결론
+
+Seamless Wallet API 만 고려하면 될 것 같음. 
 
 
 [Seamless vs Wallet](https://www.linkedin.com/pulse/wallet-integration-vs-seamless-comparison-between-anna-manente)
 
 
 
-![Transfer vs Seamless](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/231004190034.png)
+
+아래는 Pragmatic Paly API 
+
+<!-- ![Transfer vs Seamless](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/231004190034.png) -->
 
 
 
@@ -187,6 +256,9 @@ lobbyURL: mobile에서  Back to lobby 눌렀을 때 사용할 링크
 
 ![Untitled](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/Untitled%205.png)
 
+* 스웨덴의 경우 게임 인터페이스에서 사용자가 지금까지 배팅한 금액, 게임세션동안 승패 내역을 제공해야하는데 이를 Custom messages API 를 통해 제공
+
+
 <br>
 <br>
 <br>
@@ -299,6 +371,19 @@ FreeRound에서 player 삭제
 
 # 15. Regulated Markets
 스웨덴, 이탈리아, 포르투갈, 남아공
+
+* __스웨덴__ 
+  * 게임 인터페이스에서 사용자가 지금까지 배팅한 금액, 게임세션동안 승패 내역을 제공해야하는데 이를 Custom messages API 를 통해 제공
+* __이탈리아__ 
+  *  Operator가 사용자에게 게임에 돈 얼마 쓸건지 물어봐야함. =>  total balance를 사용자에게 팝업으로 보여줘야하고, 사용자가 해당 게임에 사용할 금액을 입력해야함. 
+  *  Operator가 규제자(AAMS)에 세션 전달 해야함. 
+* __포르투갈__ 
+  * 슬롯게임이나 기타RNG 게임에 대한 게임 결과를 자세히 알려주는 API 
+
+
+
+
+
 <br>
 <br>
 <br>
@@ -369,9 +454,6 @@ free ticket 취소 API
 
 프론트에서 웹소켓으로 Pragmatic Play 에서 제공하는 게임 리스트를 불러옴
 ![라이브 카지노 로비](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/231004175827.png)
-
-
-
 
 
 
