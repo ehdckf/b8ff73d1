@@ -10,7 +10,7 @@
 * Reality Check는 도박 사이트에 가입한 후 설정을 통해 활성화 한다. 그러면 일정한 간격으로 팝업창이 나타나서 사용자에게 현재 사용자의 도박 활동을 확인하고 그에 대한 판단을 도울 수 있는 정보를 제공한다. 
 * 이 팝업창에서는 사용자가 소비한 돈, 소요된 시간, 손실 금액 등을 보여줄 수 있다.  사용자는 이를 통해 자신의 도박 습관을 평가하고 필요한 경우 조절할 수 있다. 
 * 아무튼 Reality Check는 사용자에게 도박 중독을 예방하거나 문제를 조절하는 데 도움이 된다. 
-
+<br><br><br><br>
 
 # !!!
 
@@ -100,7 +100,7 @@ Seamless Wallet API 만 고려하면 될 것 같음.
 
 ### 3.4 Authenticate
 
-#### The currency of the player is set up when the player opens a game for the first time, and the player account is created in the Pragmatic Play database, with the userId and currency received in the response on the Authentication request. <br> Important:  Currency cannot be changed after the player account is created.
+The currency of the player is set up when the player opens a game for the first time, and the __player account is created in the Pragmatic Play database__, with the userId and currency received in the response on the Authentication request. <br> Important:  Currency cannot be changed after the player account is created.
 
 <br>
 <br>
