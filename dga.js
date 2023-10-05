@@ -1,3 +1,5 @@
+// 프론트에서 사용할 Live casino websocket
+
 var xlg = {
         websocket: null,
         wsUri: null,
