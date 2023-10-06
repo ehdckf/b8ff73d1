@@ -12,9 +12,22 @@
 * 아무튼 Reality Check는 사용자에게 도박 중독을 예방하거나 문제를 조절하는 데 도움이 된다. 
 <br><br><br><br>
 
-# !!!
+### RNG
+Random Number Generator, 난수생성기를 의미하는 말로 무작위로 생성된 숫자 또는 기호를 기반으로 작동하며 결과를 예측할 수 없다. 
 
-~~혼자하는 게임이라고 seamless wallet API를 사용하는 게 아니였음~~
+<br><br>
+
+# Pragmatic Play 링크
+* [슬롯 데모](https://www.pragmaticplay.com/en/games/country-farming/?gamelang=en&cur=USD)
+* [RNG 데모](https://www.pragmaticplay.com/en/other-rng/)
+* [라이브 카지노 데모](https://pragmatic-play-live-casino-demo.teith.io/)
+ttesstt/알려진 비밀번호
+
+
+<br><br>
+
+
+# !!!!
 
 카지노 게임 제공 업체에서는 다음 두가지 솔루션을 제시할 수 있음
 * Provider가  game + account 묶어서 제공 
@@ -49,11 +62,10 @@ game 만 제공하는 경우에도 다음 두 가지로 나눌 수 있음
 
 <br>
 <br>
-<br>
-<br>
 
 
-### Balanc Transfer
+
+### Balance Transfer
 * 게임 시작할 때, 그리고 끝날 때에만 통신이 이루어짐. 
 * Deposit과 Withdrawl  
 * 게임 세션이 시작될 때 Provider에게 입금하고, 게임세션이 종료되면 출금
@@ -71,19 +83,10 @@ Seamless Wallet API 만 고려하면 될 것 같음.
 [Seamless vs Wallet](https://www.linkedin.com/pulse/wallet-integration-vs-seamless-comparison-between-anna-manente)
 
 
-
-
-
-
-
 <!-- ![Transfer vs Seamless](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/231004190034.png) -->
+<br><br>
 
-
-
-# Pragmatic Paly API 
-
-## 3. SeamlessWallet API
-
+## Pragmatic Play
 
 ![Untitled](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/Untitled.png)
 
@@ -92,6 +95,22 @@ Seamless Wallet API 만 고려하면 될 것 같음.
 ![Untitled](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/Untitled%202.png)
 
 
+## Evolution Game
+![Untitled](EvolutionGame/231005142533.png)
+
+
+
+
+
+# Pragmatic Play API 
+<!-- ①②③④⑤⑥⑦⑧⑨⑩
+⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳
+㉑㉒㉓㉔㉕㉖㉗㉘㉙㉚
+㉛㉜㉝㉞㉟㊱㊲㊳㊴㊵
+㊶㊷㊸㊹㊺㊻㊼㊽㊾㊿ -->
+
+
+## 3. SeamlessWallet API
 <br>
 <br>
 <br>
