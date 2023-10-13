@@ -21,7 +21,7 @@ Random Number Generator, 난수생성기를 의미하는 말로 무작위로 생
 * [슬롯 데모](https://www.pragmaticplay.com/en/games/country-farming/?gamelang=en&cur=USD)
 * [RNG 데모](https://www.pragmaticplay.com/en/other-rng/)
 * [라이브 카지노 데모](https://pragmatic-play-live-casino-demo.teith.io/)
-ttesstt/알려진 비밀번호
+  ttestt/qwer1234
 
 
 <br><br>
