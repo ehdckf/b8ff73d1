@@ -96,7 +96,6 @@ Seamless Wallet API 만 고려하면 될 것 같음.
 
 
 ## Evolution Game
-![Untitled](EvolutionGame/231005142533.png)
 
 
 
@@ -484,45 +483,27 @@ Seamless Wallet API 의 __/bet.html__  __/result.html__
 
 
 
-# Evolution Gaming
 
-## Application API
+# !!!!!!
 
-## Balance Push API
 
-## Bonus API
+# 게임 목록 아이콘 조회
+![게임목록 아이콘 조회](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_GET_GAME_LIST_ICON.png "게임목록 아이콘 조회")
 
-## Chat and Push Notification API
 
-## Checksum API
 
-## Classification API
-
-## Direct Game Launch API
-
-## Finland Reporting Service
-
-## Frontend Intergration Hub
-
-## Game History API
-
-## Game Rendering API
-
-## Game Streaming API
-
-## Jackpot API
-
-## One Wallet API
-
-## Portugal SAFE Reporting Service
-
-## Reward Games API
-
-## SAFE3 Reporting
-
-## Unified Reality Check API
-
-## User Authentication API
+# 헬스체크
+![헬스체크](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_HEALTH_CHECK.png "헬스체크")
+# Game URL
+![Game URL](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_GAME_URL.png "Game URL")
+# Authenticate
+![Authenticate](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_Authenticate.png "Authenticate")
+# Balance
+![Balance](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_BALANCE.png "Balance")
+# Bet
+![Bet](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_BET.png "Bet")
+# RESULT
+![RESULT](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_RESULT.png "RESULT")
 
 
 
