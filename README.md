@@ -502,12 +502,25 @@ Seamless Wallet API 의 __/bet.html__  __/result.html__
 ![Balance](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_BALANCE.png "Balance")
 # Bet
 ![Bet](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_BET.png "Bet")
+
+
+reference(Unique reference of this transaction.) 저장해야됨.
+
+refund 할 때 reference 만 알려줌
+
+
+# Refund
+![Refund](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_REFUND.png "Refund")
+
+
+
 # RESULT
 ![RESULT](Pragmatic%20Play%20SeamlessWallet%20API%20e14ac16b169e488eb92e97776760fb5d/PP_RESULT.png "RESULT")
 
 
 
 
+# 라이브카지노
 
 
 
