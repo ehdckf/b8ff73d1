@@ -53,7 +53,7 @@ game 만 제공하는 경우에도 다음 두 가지로 나눌 수 있음
 |Balance|잔고 조회|balance|
 |Bet|베팅|debit|
 |Result|베팅결과|credit|
-|Refund|베팅취소|cancle|
+|Refund|베팅취소|cancel|
 |...|기타|...|
 
 * 장점: Operator가 모든 트랜잭션을 관리, Operator가 관리하는 Account가 매 라운드마다, 매 게임마다 실시간으로 업데이트됨.
@@ -294,7 +294,7 @@ Free Round 만들기
 <br>
 <br>
 
-### 6.4 Cancle Free Rounds
+### 6.4 cancel Free Rounds
 Free Round 삭제
 <br>
 <br>
@@ -349,7 +349,7 @@ FreeRound에서 player 삭제
 ### 8.6 Jackpot Winners
 ### 8.7 Daily Totals
 ### 8.8 Player's incomplete Rounds
-### 8.9 Cancled Rounds
+### 8.9 canceld Rounds
 
 
 <br>
