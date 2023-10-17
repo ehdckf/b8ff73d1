@@ -8,7 +8,7 @@ const response = {
         h: "world",
 };
 
-const secret = "funnyfig";
+const secret = "sseeccrreettt";
 
 function calcHash(params) {
         const paramString = Object.entries(params)
